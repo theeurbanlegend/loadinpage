@@ -3,13 +3,14 @@ html{
     height:100%;
     border:solid;
     position: relative;
+    background-image:url(tictavtoe.jpg);
+    background-size: cover;
     
 }
 
 #preloader{
     position: absolute;
-    background-color: black;
-    
+    backdrop-filter: blur(16px);
     top:0;
     left:0;
     display:flex;
