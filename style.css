@@ -3,11 +3,13 @@ html{
     height:100%;
     border:solid;
     position: relative;
+    
 }
 
 #preloader{
     position: absolute;
     background-color: black;
+    
     top:0;
     left:0;
     display:flex;
@@ -21,37 +23,39 @@ html{
     
 #san1{
     position: absolute;
-    background-color:brown;
+    border:solid 20px brown;
     height:100px;
     width:100px;
     border-radius:500px;
     justify-content: center;
-    
+    animation-name: disappear;
+    animation-delay:0s;
+    animation-timing-function: ease-in-out;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    animation-fill-mode:backwards;
 
 }
-.nought{
-    animation-name:spin;
-    animation-duration: 4s;
-}
-#san2{
-    position: absolute;
-    background-color:white;
-    z-index:1;
-    height:80px;
-    width:80px;
-    border-radius:500px;
-    justify-content: center;
-    
 
-}
+
+
+
 #san3{
     position: absolute;
     background-color:aqua;
     height:10px;
-    width:100px;
+    width:140px;
     border-radius:5px;
     justify-content: center;
     transform: rotateZ(45deg);
+    animation-name: spin;
+    animation-delay:0s;
+    animation-timing-function: ease-in-out;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-fill-mode:forwards;
    
 }
 #san4{
@@ -59,8 +63,26 @@ html{
     background-color:aqua;
     transform: rotateZ(-45deg);
     height:10px;
-    width:100px;
+    width:140px;
     border-radius:5px;
     justify-content: center;
+    animation-name: spin;
+    animation-delay:0s;
+    animation-timing-function: ease-in-out;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-fill-mode:forwards;
 
+}
+@keyframes spin {
+
+    from{transform: origin 45deg;}
+    to{transform: rotate(720deg);opacity:0;}
+
+   
+}
+@keyframes disappear{
+    from{opacity: 100;}
+    to{opacity: 0;}
 }
