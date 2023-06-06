@@ -1,0 +1,66 @@
+html{
+    width:100%;
+    height:100%;
+    border:solid;
+    position: relative;
+}
+
+#preloader{
+    position: absolute;
+    background-color: black;
+    top:0;
+    left:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border:solid;
+    width:100%;
+    height:100%;
+}
+
+    
+#san1{
+    position: absolute;
+    background-color:brown;
+    height:100px;
+    width:100px;
+    border-radius:500px;
+    justify-content: center;
+    
+
+}
+.nought{
+    animation-name:spin;
+    animation-duration: 4s;
+}
+#san2{
+    position: absolute;
+    background-color:white;
+    z-index:1;
+    height:80px;
+    width:80px;
+    border-radius:500px;
+    justify-content: center;
+    
+
+}
+#san3{
+    position: absolute;
+    background-color:aqua;
+    height:10px;
+    width:100px;
+    border-radius:5px;
+    justify-content: center;
+    transform: rotateZ(45deg);
+   
+}
+#san4{
+    position: absolute;
+    background-color:aqua;
+    transform: rotateZ(-45deg);
+    height:10px;
+    width:100px;
+    border-radius:5px;
+    justify-content: center;
+
+}
